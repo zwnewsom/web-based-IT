@@ -1,0 +1,154 @@
+/*
+Our color palette for this website is:
+#00BFFF - medium blue - used for main page background
+#191970 - dark blue - used for banner and footer backgrounds and some text on main background
+#221811 - very dark gray/black - used primarily for text
+#A52A2A - reddish orange - used for headers for <dl> on menu page
+#FFE4C4 - sand - used for text in headers and lists
+#00008B
+*/
+
+body
+{
+    background-color: #00BFFF;
+    color: #221811;
+    font-family: Verdana, Arial, sans-serif;
+    background-image: url("../images/ocean.jpg");
+    background-repeat: repeat-x;
+}
+
+h1
+{
+    color: #FFE4C4;
+    line-height: 200%;
+    text-align: left;
+    font-size: 35pt;
+}
+
+h3
+{
+    color: #FFE4C4;
+    display: inline;
+}
+
+dt
+{
+    color: #FFE4C4;
+    font-weight: bold;
+    margin: 5px;
+}
+
+dd
+{
+    color: #221811;
+}
+
+dl
+{
+    margin-right: 100px;
+}
+
+body footer
+{
+    background-image: url("../images/lighthouselogo1.jpg");
+    background-repeat: repeat-x;
+    border: 1px solid #FFE4C4;
+    border-radius: 6px;
+    color: #191970;
+    font-size: small;
+    font-style: italic;
+    height: 35px;
+    margin-top: 2em;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+li
+{
+    color: #FFE4C4;
+}
+
+p u strong
+{
+    color: #A52A2A;
+    font-family:Calibri;
+    font-size: 1.4em;
+}
+
+p u
+{
+    color: #A52A2A;
+}
+
+nav
+{
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    list-style: none;
+    margin: 2px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a
+{
+    text-decoration: none;
+}
+
+header h1
+{
+    color: #00008B;
+    background-image: url("../images/lighthouselogo.jpg");
+    background-repeat: no-repeat;
+    height: 110px;
+    padding-left: 130px;
+    padding-top: 30px;
+    border: 1px solid #FFE4C4;
+    border-width:1px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+ul
+{
+    list-style-image: url("../images/marker.gif");
+}
+
+#wrapper main [alt="Picture of a lighthouse"]
+{
+    width: 250px;
+    height:350px;
+    display: inline-block;
+    margin-right: 85px;
+    margin-left: 15px;
+}
+
+#wrapper main
+{
+    display: inline-block;
+}
+
+#wrapper main img
+{
+    width: 250px;
+    height: 250px;
+    float: right;
+}
+
+#wrapper
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    min-width: 750px;
+    width: 80%;
+}
+
+#address
+{
+    color: #191970;
+    font-size: 92%;
+    font-family: Calibri;
+}
