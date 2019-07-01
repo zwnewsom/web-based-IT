@@ -8,6 +8,52 @@ Our color palette for this website is:
 #00008B
 */
 
+@media screen and (min-width: 751px)
+{
+    header h1
+    {
+        width: 65%;
+        font-size: 4vw;
+        color: #00008B;
+        background-image: url("../images/lighthouselogo.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 110px;
+        padding-left: 130px;
+        padding-top: 30px;
+        border: 1px solid #FFE4C4;
+        border-width:1px;
+        border-radius: 15px;
+        margin: auto;
+        line-height: 200%;
+        text-align: left;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    header h1
+    {
+        font-size: 25pt;
+        width: 80%;
+        color: #00008B;
+        background-image: url("../images/lighthouselogo.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 110px;
+        padding-left: 130px;
+        padding-top: 30px;
+        border: 1px solid #FFE4C4;
+        border-width:1px;
+        border-radius: 15px;
+        margin: auto;
+        line-height: 200%;
+        text-align: left;
+        white-space: nowrap;
+    }
+}
+
 body
 {
     background-color: #00BFFF;
@@ -17,98 +63,142 @@ body
     background-repeat: repeat-x;
 }
 
-h1
-{
-    color: #FFE4C4;
-    line-height: 200%;
-    text-align: left;
-    font-size: 35pt;
-}
-
 h3
 {
     color: #FFE4C4;
     display: inline;
 }
 
-dt
+#wrapper
 {
-    color: #FFE4C4;
-    font-weight: bold;
-    margin: 5px;
+    display: grid;
+    grid-gap: 1em;
+    margin: 10px;
 }
 
-dd
+#wrapper header
 {
-    color: #221811;
-}
-
-dl
-{
-    margin-right: 100px;
-}
-
-body footer
-{
-    background-image: url("../images/lighthouselogo1.jpg");
-    background-repeat: repeat-x;
-    border: 1px solid #FFE4C4;
-    border-radius: 6px;
-    color: #191970;
-    font-size: small;
-    font-style: italic;
-    height: 35px;
-    margin-top: 2em;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-align: center;
-}
-
-li
-{
-    color: #FFE4C4;
-}
-
-p u strong
-{
-    color: #A52A2A;
-    font-family:Calibri;
-    font-size: 1.4em;
-}
-
-p u
-{
-    color: #A52A2A;
+    grid-row: 1 / 2;
+    grid-column: span 2;
+    display: table-row;
 }
 
 nav
 {
-    padding: 30px;
-    text-align: center;
-    font-weight: bold;
+    grid-row-start: 2;
+    grid-column: 1/2;
+    margin: 5em 0em 0em 11em;
     list-style: none;
-    margin: 2px;
-    display: flex;
-    justify-content: space-around;
+    display: table-cell;
+    width: 200px;
 }
 
-nav a
+nav ul
 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a
+{
+    display: block;
+    width: 60px;
+    font-weight: bold;
     text-decoration: none;
+    padding-left: 25px;
 }
 
-header h1
+nav ul li:nth-child(2) { white-space: nowrap; }
+
+#wrapper ul
 {
-    color: #00008B;
-    background-image: url("../images/lighthouselogo.jpg");
-    background-repeat: no-repeat;
-    height: 110px;
-    padding-left: 130px;
-    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#address
+{
+    display: table-cell;
+    background-image: url("../images/ocean.jpg");
     border: 1px solid #FFE4C4;
-    border-width:1px;
-    border-radius: 15px;
-    margin: auto;
+    border-radius: 2px;
+    padding: 20px;
+    color: #191970;
+}
+
+#wrapper address
+{
+    font-size: 92%;
+    font-family: Calibri;
+    border: 2px;
+}
+
+#wrapper main
+{
+    grid-row: 2;
+    grid-column: 2/3;
+    text-align: left;
+    width: 80%;
+    height: 70%;
+    min-width: 100px;
+    margin: 5em 0em 0em 0em;
+}
+
+#wrapper main [alt="Picture of a lighthouse"]
+{
+    width: 250px;
+    height:350px;
+    float: right;
+    padding: 10px;
+}
+
+caption
+{
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#wrapper main table, th, td
+{
+    border: 2px solid #FFE4C4;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+}
+
+table
+{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+td:nth-child(1) { width: 12%; }
+td:nth-child(2) { width: 50%; }
+td:nth-child(3) { width: 30%; }
+td:nth-child(4) { width: 38%; }
+
+th
+{
+    background-color: #000066;
+    color: #EAEAEA;
+}
+
+tr:nth-child(odd)
+{
+    background-color: #A9A9A9;
+    color: #00008B;
+    padding: 5px;
+}
+
+td:nth-child(2)
+{
+    text-align: left;
+}
+
+td img
+{
+    width: 100px;
+    height: 75px;
 }
 
 ul
@@ -116,39 +206,30 @@ ul
     list-style-image: url("../images/marker.gif");
 }
 
-#wrapper main [alt="Picture of a lighthouse"]
+main ul
 {
-    width: 250px;
-    height:350px;
-    display: inline-block;
-    margin-right: 85px;
-    margin-left: 15px;
+    vertical-align: text-bottom;
 }
 
-#wrapper main
+p
 {
-    display: inline-block;
+    padding-bottom: 25px;
 }
 
-#wrapper main img
+#wrapper footer
 {
-    width: 250px;
-    height: 250px;
-    float: right;
-}
-
-#wrapper
-{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 900px;
-    min-width: 750px;
-    width: 80%;
-}
-
-#address
-{
+    grid-row: 3/4;
+    grid-column: span 2;
+    background-image: url("../images/lighthouselogo1.jpg");
+    background-repeat: repeat-x;
+    border: 1px solid #FFE4C4;
+    border-radius: 6px;
     color: #191970;
-    font-size: 92%;
-    font-family: Calibri;
+    font-size: small;
+    font-style: italic;
+    height: 50%;
+    margin-top: 2em;
+    padding-bottom: 2px;
+    text-align: center;
+    display: table-row;
 }
