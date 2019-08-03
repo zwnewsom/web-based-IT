@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset=utf-8>
+    <meta charset=utf-8 >
+    <meta name="viewport"  content="width=device-width">
     <title>The Lighthouse Bistro</title>
     <link href = "../css/bistro.css" rel = "stylesheet">
     <link rel="icon" href="../images/favicon.ico" type="image/gif">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../app.js"></script>
 </head>
-<body>
+<body onload="getDateTime()">
 <div id="wrapper">
 <header>
     <h1>The Lighthouse Bistro</h1>
@@ -14,19 +18,20 @@
 
 <nav>
     <ul>
-        <li><a href="index.html">Home</a>&nbsp;</li>
-        <li><a href="menu.html">Our Menu</a>&nbsp;</li>
-        <li><a href="">Entertainment Schedule</a>&nbsp;</li>
-        <li><a href="">Tours</a>&nbsp;</li>
-        <li><a href="">Reservations</a>&nbsp;</li>
+        <li><a href="index.html">Home</a><br></li>
+        <li><a href="menu.html">Our Menu</a><br></li>
+        <li><a href="entertainment.html">Entertainment Schedule</a><br></li>
+        <li><a href="tours.html">Tours</a><br></li>
+        <li><a href="reservations.html">Reservations</a><br></li>
     </ul>
 
     <div id="address">
-            The Lighthouse Bistro<br>
-            #27 Olde Lighthouse Road<br>
-            Mackinaw City, Michigan 49701<br>
-            <br>888-555-5555<br><br>
-    </div> 
+            <p> The Lighthouse Bistro<br>
+                #27 Lighthouse Road<br>
+                Mackinaw City, Michigan 49701<br>
+            </p>
+                <br><a href="tel:888-555-5555"><h3>888-555-5555</h3></a><br><br>
+        </div>
 </nav>
 
 <main>
@@ -47,10 +52,9 @@
 </main>
 
 <footer>
-    <em>
         Copyright &copy; 2019 The Lighthouse Bistro<br>
         <a href="mailto:zach@newsom.com">zach@newsom.com</a>
-    </em>
+        <p id="dateTime"></p>
 </footer>
 </div>
 </body>

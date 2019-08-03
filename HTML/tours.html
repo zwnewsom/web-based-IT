@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8 >
+    <meta name="viewport"  content="width=device-width">
+    <title>The Lighthouse Bistro</title>
+    <link href = "../css/bistro.css" rel = "stylesheet">
+    <link rel="icon" href="../images/favicon.ico" type="image/gif">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../app.js"></script>
+</head>
+<body onload="getDateTime()">
+<div id="wrapper">
+<header>
+    <h1>The Lighthouse Bistro</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a><br></li>
+        <li><a href="menu.html">Our Menu</a><br></li>
+        <li><a href="entertainment.html">Entertainment Schedule</a><br></li>
+        <li><a href="tours.html">Tours</a><br></li>
+        <li><a href="reservations.html">Reservations</a><br></li>
+    </ul>
+
+    <div id="address">
+            <p> The Lighthouse Bistro<br>
+                #27 Lighthouse Road<br>
+                Mackinaw City, Michigan 49701<br>
+            </p>
+                <br><a href="tel:888-555-5555"><h3>888-555-5555</h3></a><br><br>
+        </div>
+</nav>
+
+<main>
+    <h2>The Lighthouse Bistro Tour Schedule</h2>
+    <p>We provide a couple of scenic tours along the North Shore aboard our private yacht. Inquire at the front desk about the schedule as it varies with the season.
+       Most of the tours last between two and three hours. The short video below provides a glimpse of one of our cruises.
+    </p>
+    <h3 id="enth3">Upper Peninsula Lighthouse Cruises</h3>
+    <video controls="controls" poster="../images/lighthouse.jpg">
+        <source src="../video/lighthouse.m4v" type="video/mp4">
+        <source src="../video/lighthouse.ogv" type="video/ogg">
+        <embed type="application/x-shockwave-flash" src="../video/lighthouse.swf" title="Upper Peninsula Lighthouse Cruise">
+    </video>
+          
+</main>
+
+<footer>
+        Copyright &copy; 2019 The Lighthouse Bistro<br>
+        <a href="mailto:zach@newsom.com">zach@newsom.com</a>
+        <p id="dateTime"></p>
+</footer>
+</div>
+</body>
+</html>
+

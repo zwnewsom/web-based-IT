@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport"  content="width=device-width">
+    <link href = "../css/bistro.css" rel = "stylesheet">
+    <title>The Lighthouse Bistro</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/gif">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../app.js"></script>
+</head>
+<body onload="getDateTime(); eventListener();">
+<div id="wrapper">
+<header>
+    <h1>The Lighthouse Bistro</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a><br></li>
+        <li><a href="menu.html">Our Menu</a><br></li>
+        <li><a href="entertainment.html">Entertainment Schedule</a><br></li>
+        <li><a href="tours.html">Tours</a><br></li>
+        <li><a href="reservations.html">Reservations</a><br></li>
+    </ul>
+
+    <div id="address">
+        <p> The Lighthouse Bistro<br>
+            #27 Lighthouse Road<br>
+            Mackinaw City, Michigan 49701<br>
+        </p>
+            <br><a href="tel:888-555-5555"><h3>888-555-5555</h3></a><br><br>
+    </div> 
+</nav>
+
+<main>
+    <h2>Reservations at The Lighthouse Bistro</h2>
+    <h3>Contact Us Today To Make Your Dining Reservation!</h3>
+    <p>Required fields are marked with an *</p>
+    <form action="http://cs.ucf.edu/~markl/bistroformreport.php" method="POST">
+    <fieldset>
+        <label for="fname">*First Name: </label>
+        <input type="text" name="fname" id="fname" autofocus required><br><br>
+        <label for="lname">*Last Name:  </label>
+        <input type="text" name="lname" id="lname" required><br><br>
+        <label for="email">*E-mail:</label>
+        <input type="email" name="email" id="email" required><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" ><br><br>
+        <label for="time">Time:</label>
+        <input type="time" name="time" id="time" ><br><br>
+        <label for="numberguests">Number of Guests:</label>
+        <input type="number" name="numberguests" id="numberguests"><br><br>
+        <label for="comments">*Comments:</label>
+        <textarea rows="2" cols="32" maxlength="64" id="comments" required></textarea><br>
+        <label id="void">Void</label>
+        <p id="msg">Message limit 64 characters</p>
+        <input type="submit" value="Submit">
+    </fieldset>
+    </form>
+</main>
+
+<footer>
+        Copyright &copy; 2019 The Lighthouse Bistro<br>
+        <a href="mailto:zach@newsom.com">zach@newsom.com</a>
+        <p id="dateTime"></p>
+</footer>
+</div>
+</body>
+</html>
+
